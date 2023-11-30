@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloe Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <h1 id="heading">Color Picker</h1>
+
+<div class="main-container">
+
+    
+    <div class="color-container">
+        <span>No Color</span>
+    </div>
+ 
+    <div class="color-change-slider">
+        <div class="rgb-color-change-slider">
+            <div class="red-value-area value-area-common-prop">0</div>
+
+            <input type="range" name="" id="red-col-pic-slider" class="common-col-pic-slider" min="0" max="255">
+
+
+            <div class="green-value-area value-area-common-prop">0</div>
+
+            <input type="range" name="" id="green-col-pic-slider" class="common-col-pic-slider" min="0" max="255">
+        
+        
+            <div class="blue-value-area value-area-common-prop">0</div>
+        
+            <input type="range" name="" id="blue-col-pic-slider" class="common-col-pic-slider" min="0" max="255">
+        </div>
+    
+        <div class="opacity-slider">
+            <input type="range" name="" id="opacity-slider" class="common-col-pic-slider" min="0" max="1" step="0.01">
+        </div>
+    </div>
+    
+</div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
