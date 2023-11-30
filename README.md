@@ -21,10 +21,6 @@ This project provides a simple and interactive color picker tool, allowing users
 3. Use the sliders to adjust the RGBa values and opacity.
 4. Witness the color container dynamically update in real-time.
 
-## Screenshots
-
-![Color Picker App Screenshot](screenshot.png)
-
 ## Technologies Used
 
 - HTML
