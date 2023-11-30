@@ -7,7 +7,6 @@ let opacityInput = document.querySelector('#opacity-slider');
  
 let coloredArea = document.querySelector('.color-container');
 let coloredAreaSpan = document.querySelector('.color-container span');
-// coloredAreaSpan.style.fontSize = "4.5rem";
 
 let redValueArea = document.querySelector('.red-value-area');
 let greenValueArea = document.querySelector('.green-value-area');
