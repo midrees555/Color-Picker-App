@@ -4,6 +4,8 @@ let redColorChangerInput = document.querySelector('#red-col-pic-slider');
 let greenColorChangerInput = document.querySelector('#green-col-pic-slider');
 let blueColorChangerInput = document.querySelector('#blue-col-pic-slider');
 let opacityInput = document.querySelector('#opacity-slider');
+let newsHeadline = document.querySelector('.news-headline');
+let newsHeadlineText = document.querySelector('.news-headline p');
  
 let coloredArea = document.querySelector('.color-container');
 let coloredAreaSpan = document.querySelector('.color-container span');
@@ -16,6 +18,17 @@ let redValue;
 let greenValue;
 let blueValue;
 let opacityValue;
+
+
+
+newsHeadlineText.addEventListener('mouseover', () => {
+    newsHeadlineTextAnimateStop();
+})
+
+newsHeadlineText.addEventListener('mouseout', () => {
+    newsHeadlineTextAnimateStart();
+})
+
 
 redColorChangerInput.addEventListener('input', () => {
     redValue = redColorChangerInput.value;
@@ -63,4 +76,14 @@ function colorChanged () {
     if(redValue >= 170 || greenValue >= 170 || blueValue >= 170) {
         coloredAreaSpan.style.color = "#000";
     }
+}
+
+
+// function for news Headline animation...
+function newsHeadlineTextAnimateStart() {
+    newsHeadlineText.style.animationPlayState = 'running';
+}
+
+function newsHeadlineTextAnimateStop() {
+    newsHeadlineText.style.animationPlayState = 'paused';
 }
