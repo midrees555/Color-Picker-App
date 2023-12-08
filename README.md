@@ -1,5 +1,3 @@
-**README.md Description:**
-
 # Color Picker Web App
 
 Welcome to the Color Picker Web App repository! 🌈
